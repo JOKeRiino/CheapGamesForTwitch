@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+    <script rel="script" src="index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="content">
+        <h1>Games Currently On Sale:</h1>
+
+        <div class="container">
+            <div class="select-box">
+                <div class="options-container">
+                    <div class="option" id="all-opt">
+                        <input type="radio" class="radio" id="all" name="category">
+                        <label for="all">Show All</label>
+                    </div>
+                    <div class="option" id="aaa-opt">
+                        <input type="radio" class="radio" id="aaa" name="category">
+                        <label for="aaa">AAA+ Games</label>
+                    </div>
+                    <div class="option" id="underfive-opt">
+                        <input type="radio" class="radio" id="underfive" name="category">
+                        <label for="underfive">Games under 5$</label>
+                    </div>
+                    <div class="option" id="steam-opt">
+                        <input type="radio" class="radio" id="steam" name="category">
+                        <label for="steam">Steam Games</label>
+                    </div>
+                    <div class="option" id="epic-opt">
+                        <input type="radio" class="radio" id="epic" name="category">
+                        <label for="epic">Epic Games</label>
+                    </div>
+                    <div class="option" id="origin-opt">
+                        <input type="radio" class="radio" id="origin" name="category">
+                        <label for="origin">Origin Games</label>
+                    </div>
+                    <div class="option" id="gog-opt">
+                        <input type="radio" class="radio" id="gog" name="category">
+                        <label for="gog">GOG Games</label>
+                    </div>
+                    <div class="option" id="uplay-opt">
+                        <input type="radio" class="radio" id="uplay" name="category">
+                        <label for="uplay">Uplay Games</label>
+                    </div>
+                    <div class="option" id="fanatical-opt">
+                        <input type="radio" class="radio" id="razer" name="category">
+                        <label for="razer">Fanatical</label>
+                    </div>
+                </div>
+    
+                <div class="selected">Select A Category</div>
+            </div>
+            <div class="select-box-page">
+                <div class="options-container-page">
+                    <div class="option-page" id="twenty-opt">
+                        <input type="radio" class="radio" id="twenty" name="category">
+                        <label for="twenty">20</label>
+                    </div>
+                    <div class="option-page" id="fourty-opt">
+                        <input type="radio" class="radio" id="fourty" name="category">
+                        <label for="fourty">40</label>
+                    </div>
+                    <div class="option-page" id="sixty-opt">
+                        <input type="radio" class="radio" id="sixty" name="category">
+                        <label for="sixty">60</label>
+                    </div>
+                </div>
+                <div class="selected-page">20</div>
+            </div>
+        </div>
+
+        <div class="loader" id="alien-loader">
+            <span>👾</span>
+            <span>👾</span>
+            <span>👾</span>
+        </div>
+
+        <ul id="gameList"></ul>
+        <span class="attribution">v2.1.1 Made with 💜 by JOKeRiino</span>
+    </section>
+</body>
+</html>
